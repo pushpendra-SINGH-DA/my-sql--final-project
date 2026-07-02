@@ -1,0 +1,29 @@
+PROBLEM STATMENT 
+--------------------
+Every year thousands of pilgrims and tourists visit Ujjain and many other places .
+
+The department currently manages:
+
+Hotels
+Tourists
+Bookings
+Events
+Reviews
+
+using Excel sheets.
+
+Problems:
+
+1. Duplicate records
+
+2. Booking mistakes
+
+3. No centralized data
+
+4. Difficult to generate reports
+
+5. Cannot track tourist activities
+
+6. Revenue reporting takes days
+
+The department wants a database solution.
