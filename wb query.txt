@@ -1,0 +1,11 @@
+
+select r.hotel_id ,h.hotel_name ,count(b.room_type_id) as total_booking
+from
+bookings b
+INNER JOIN
+room_types r 
+ON b.room_type_id = r.room_type_id
+inner join
+hotels h
+ON h.hotel_id = r.hotel_id
+group by r.hotel_id, h.hotel_name ;

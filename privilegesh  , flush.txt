@@ -1,0 +1,74 @@
+
+mysql> CREATE USER admin@localhost IDENTIFIED BY "admin123" ;
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> GRANT ALL PRIVILEGES ON *.* TO admin@localhost ;
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> FLUSH PRIVILEGES ;
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> CREATE USER push1@localhost IDENTIFIED BY "push1@123" ;
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> show databases ;
++-------------------------+
+| Database                |
++-------------------------+
+| clause                  |
+| demo1                   |
+| employee_project_system |
+| employees               |
+| employes                |
+| employess               |
+| exercise                |
+| food_delivery           |
+| food_delivery_system    |
+| fooddelivery            |
+| foreign_key_use_case    |
+| full_join_use_case      |
+| function_use_case       |
+| if_else_use_case        |
+| information_schema      |
+| joins_use_case          |
+| mysql                   |
+| performance_schema      |
+| procedure_use_case      |
+| relationship_use_case   |
+| sakila                  |
+| school                  |
+| sporrts                 |
+| sports                  |
+| strings_use_case        |
+| student                 |
+| students                |
+| subquery_use_cae        |
+| sys                     |
+| text_2                  |
+| trigger_use_case        |
+| union_use_case          |
+| world                   |
++-------------------------+
+33 rows in set (0.00 sec)
+
+mysql> use subquery_use_cae ;
+Database changed
+mysql> select * from tables;
+ERROR 1146 (42S02): Table 'subquery_use_cae.tables' doesn't exist
+mysql> select * from tables ;
+ERROR 1146 (42S02): Table 'subquery_use_cae.tables' doesn't exist
+mysql> show tables ;
++----------------------------+
+| Tables_in_subquery_use_cae |
++----------------------------+
+| employees                  |
++----------------------------+
+1 row in set (0.00 sec)
+
+mysql> GRANT select ON subquery_use_cae.* TO push1@localhost ;
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> FLUSH PRIVILEGES ;
+Query OK, 0 rows affected (0.01 sec)
+
+mysql>

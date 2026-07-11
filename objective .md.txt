@@ -1,0 +1,121 @@
+# Tourist Department Database System
+
+## Objective
+
+Build a **secure**, **scalable**, and **robust** database system for the Tourist Department that efficiently manages tourist-related information while providing role-based access control for different users.
+
+---
+
+# Requirement Gathering
+
+## Questionnaire
+
+### 1. Who will use the system?
+
+- Tourist Department
+- Tourists
+- Hotels
+- System Administrators / Development Team
+- Management
+
+---
+
+### 2. What information should the system store?
+
+- Tourist Information
+- Hotel Information
+- Destination Information
+- Event Information
+- Booking Details *(if applicable)*
+- Reviews & Ratings *(optional)*
+
+---
+
+### 3. What reports does management need?
+
+- Top **N** Hotels
+- Hotel Revenue Report
+- Tourist Statistics
+- Destination-wise Tourist Count
+- Event Participation Report
+- Filterable Reports (Date, Location, Hotel, Destination, etc.)
+
+---
+
+# Functional Requirements
+
+The system should:
+
+- Perform all CRUD (Create, Read, Update, Delete) operations.
+- Store data efficiently.
+- Provide role-based access control.
+- Allow different permissions for:
+  - Admin
+  - Tourist (End User)
+  - Hotel
+  - Management
+- Generate reports.
+- Support search and filtering.
+- Maintain booking and tourist records.
+
+---
+
+# Non-Functional Requirements
+
+The system should be:
+
+- Secure
+- Scalable
+- Reliable
+- Fast
+- Robust
+- Highly Available
+- Easy to Maintain
+
+---
+
+# Entity Identification
+
+## Core Entities
+
+- Tourist
+- Hotel
+- Destination
+- Event
+- Booking
+- Review *(Optional)*
+- User
+- Role
+
+---
+
+# Possible Relationships
+
+- A **Tourist** can book one or more **Hotels**.
+- A **Hotel** is located at one **Destination**.
+- A **Destination** can have multiple **Hotels**.
+- A **Destination** can host multiple **Events**.
+- A **Tourist** can attend multiple **Events**.
+- Users have different **Roles** (Admin, Hotel, Tourist, Management).
+
+---
+
+# User Roles
+
+| Role | Permissions |
+|------|-------------|
+| Admin | Full CRUD access to all modules |
+| Tourist | View destinations, hotels, events, and manage bookings |
+| Hotel | Manage hotel details, rooms, and bookings |
+| Management | View analytics and reports |
+
+---
+
+# System Goals
+
+- Secure data storage
+- Efficient database design
+- High performance
+- Role-based authorization
+- Easy report generation
+- Future scalability

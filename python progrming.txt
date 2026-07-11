@@ -1,0 +1,80 @@
+###.PYTHON
+------------->
+##. PROGRAM ??--->
+                  it is a set of instraction given to a system to perform a specific task 
+
+##.PROGRAMING LANG --> 
+                      PROGRAMING LANG IS CLASIFIED AS :
+ 
+
+1) LOW LEVEL LANG: it is a lang of system , system can only understand low level lang .
+                    it is also called as machine language .
+
+2) HIGH LEVEL LANG : it is a lang written in human readable formate, human can read this ,
+                      and lastly apply meaningful logic with this .
+generally written in english,
+
+
+## TRANSLATOR :
+                as machine can only understand low level lang (binary lang) so we need a translator which can convert our high level code into low level code.
+
+                                   translator
+HLL ----------------------------------------------------------------> LLL
+source code                                                             machine code 
+                                               
+(** a line of code is called statement in python.)
+
+TYPES OF TRANSLATOR :
+1) interpreter :
+                  it convert our source code written in hll into machine code (binary code), line by line (statement by statement)
+                  if and only if there is no error in our statement .
+  ---> does not create a separate . exe file but instead 
+  ----> translated code directly send to cpu for processing . (one the fly )
+* RUN TIME ERROR   
+2) compiler :
+             it convert our source code written in hll into machine code (binary code)in one go ,(whole file at once)
+                                                                                                      (whole project at once) .
+
+if and only if there is no syntax error in our source code (files).
+----> create a separate ,exe file which is runnable.
+* SYNTEX ERROR 
+## --> IDE-- intregrated development environment
+
+  DA                                                     PYTHON -FS
+IDLE (default ide)
+
+jupyter notebook                                            vs code
+PyCharm                                                      pycharm
+google colab                                                  subline
+
+
+
+## HOW PYTHON CODE RUN 
+
+## INTRODUCION OF PYTHON --> 
+                            python is general purpose high level alng. it is created by guido van Rossum in early 90's (1994-1995) 
+
+
+APPLICATION : 
+
+1) data analytics / machine learning/ai .
+2) automation ( human intervension negligible )
+3) web application
+4) game development
+5) api's build
+6) server side scripting 
+
+
+#### comment definition --> in programing when ever programmer want to give information about the source code return by him then  he uses comment 
+to do so  
+comment is simple text data which give information about the source code whenever compiler encounter comment its simply ignore the text written after words.
+
+two types of comment 
+1) single line comment --> #
+2) multi line comment --> '''  
+
+
+### function definition --> it is a resubale block of code which is define to perform a specific task 
+it is classified as 
+1) pre defind (build in ) functon
+2) user defind 

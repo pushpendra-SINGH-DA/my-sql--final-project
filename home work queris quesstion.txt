@@ -1,0 +1,111 @@
+
+1)select t.full_name ,h.hotel_name ,rt.room_type_id ,b.check_in_date ,b.check_out_date ,b.booking_status
+
+from
+bookings b
+inner join 
+tourists t 
+on b.tourist_id = t.tourist_id
+join room_types rt
+on rt.room_type_id = b.oom_type_id 
+join hotels h 
+on h.hotel_id = rt.hotel_id ;
+
+
+2)select h.hotel_name ,h.hotel_type ,h.rating ,d.destination_name ,d.city ,d.state 
+from 
+hotels h 
+join 
+destinations d 
+on h.destination_id = d.destination_id ;
+
+3)use smart_tourism_db; 
+
+select h.hotel_name , rt.room_type_name ,rt.price_per_night ,rt.total_rooms
+from 
+room_types rt 
+join 
+hotels h 
+on h.hotel_id = rt.hotel_id ;
+
+4)use smart_tourism_db; 
+
+select t.full_name ,d.destination_name ,h.hotel_name ,rt.room_type_name ,b.booking_status ,b.check_in_date ,b.check_out_date 
+from 
+destinations d 
+join 
+hotels h 
+on d.destination_id = h.destination_id 
+join 
+room_types rt
+on h.hotel_id = rt.hotel_id
+join 
+bookings b
+on rt.room_type_id = b.room_type_id 
+join
+tourists t 
+on b.tourist_id = t.tourist_id ;
+
+5)
+select t.full_name ,h.hotel_name ,rt.room_type_name ,b.booking_date
+from 
+hotels h 
+join
+room_types rt 
+on h.hotel_id = rt.hotel_id 
+join 
+bookings b
+on b.room_type_id = rt.room_type_id 
+join 
+tourists t 
+on t.tourist_id = b.tourist_id ;
+
+6) use smart_tourism_db;
+
+select h.hotel_name ,rt.room_type_name ,rt.price_per_night 
+from 
+hotels h 
+join 
+room_types rt
+on h.hotel_id = rt.hotel_id ;
+  
+7) use smart_tourism_db;
+
+select t.tourist_id ,t.full_name ,t.city ,b.booking_status
+from 
+tourists t 
+join
+bookings b
+on t.tourist_id = b.tourist_id ;
+
+8)use smart_tourism_db;
+
+select d.destination_name ,h.hotel_name ,h.base_room_price ,h.hotel_type 
+from 
+destinations d 
+join
+hotels h 
+on d.destination_id = h.destination_id ;
+
+9)use smart_tourism_db;
+
+select b.booking_id ,t.full_name ,h.hotel_name ,rt.room_type_name ,b.booking_date ,b.booking_status 
+from 
+hotels h 
+join
+room_types rt 
+on h.hotel_id = rt.hotel_id 
+join bookings b
+on b.room_type_id = rt.room_type_id 
+join tourists t 
+on t.tourist_id = b.tourist_id ;
+
+10) use smart_tourism_db;
+
+select t.full_name ,max(b.booking_date) as latest_booking_date 
+from 
+tourists t 
+join 
+bookings b
+on t.tourist_id = b.tourist_id 
+group by t.full_name ,t.tourist_id ; 
